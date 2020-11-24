@@ -33,7 +33,16 @@ function setup() {
 	bobObject4=new bob(startBobPositionX+bobDiameter, startBobPositionY, bobDiameter);
 	bobObject5=new bob(startBobPositionX+bobDiameter*2, startBobPositionY, bobDiameter);
 	
-	var render = Render.create
+	var render = Render.create({
+	
+	element: document.body,
+	engine: engine,
+	options: {
+	  width: 1200,
+	  height: 700,
+	 wireframes: false
+	
+	}
 }
 
 
